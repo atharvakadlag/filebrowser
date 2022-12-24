@@ -24,7 +24,7 @@ License
 MIT (see LICENSE file).
 """
 
-from filebrowser.main import __version__
+from filebrowser import __version__
 
 try:
     from setuptools import setup
@@ -66,7 +66,7 @@ setup(
             'static/js/*',
             'static/css/*',
         ]},
-    install_requires=['flask<=2.0'],
+    install_requires=['flask'],  # <=2.0'],
     zip_safe=False,
     platforms='any'
 )
